@@ -6,11 +6,11 @@ Repo for Chicago Clojure: Overtone + Quil Hacknight
 Getting Started
 ===============
 
-1) Install [lein2][0]
-2) Fork and clone this repo ([fork-a-repo][1])
-3) Run the examples (`lein run`)
-4) Start a repl (`lein repl` or `M-x clojure-jack-in`)
-5) Hack!!!
+1. Install [lein2][0]
+2. Fork and clone this repo ([fork-a-repo][1])
+3. Run the examples (`lein run`)
+4. Start a repl (`lein repl` or `M-x clojure-jack-in`)
+5. Hack!!!
 
 The Examples
 ============
@@ -22,10 +22,12 @@ Draws the Overtone logo in a new window and connects it to Overtone's
 main output using the new `tap` feature. Make some sound and watch it
 go!
 
+TODO: add a usage example.
+
 Controller
 ----------
 
-Draws a __clickable__ button on the screen and wire it up to a simple
+Draws a _clickable_ button on the screen and wires it up to a simple
 synth. Control the synth by interacting with the button.
 
 Running the Examples
