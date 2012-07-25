@@ -21,17 +21,16 @@ The Examples
 Visualizer
 ----------
 
-Draws the Overtone logo in a new window and connects it to Overtone's
-main output using the new `tap` feature. Make some sound and watch it
-go!
+Draws the colorful circles in response to Overtone's output using the
+new `tap` feature. Make some sound and watch see what happens.
 
-TODO: add a usage example.
 
 Controller
 ----------
 
-Draws a _clickable_ button on the screen and wires it up to a simple
-synth. Control the synth by interacting with the button.
+Draws an empty window on the screen and wires it up to a nice dub-bass
+synth. Click and drag in the window to control the synth. When you
+click, you'll see a target letting you know where you left off.
 
 Running the Examples
 ====================
@@ -39,19 +38,24 @@ Running the Examples
 ```sh
 $ cd overtone-quil-hacknight
 $ lein run
-``` 
+```
 
 This will run the visualzer and the controller examples at the same
-time in different windows. Jump in and start playing with the
-controller button to make the visualization react.
+time in different windows and start the dub-bass. Jump in and start
+playing with the controller window and watch the visualization.
+
+Stuff you can do
+================
+
+* Make the visualization more draw different shapes
+* Add a :freq tap and use it to change the background color.
+* Make the controller more visual! Change the shape/size/color of
+  controller 'target'
+* Extend the visualizer/controller to work with a different synth or
+  set of taps (it's currently hard coded).
 
 Next Steps
 ==========
-
-Build on the examples...
-------------------------
-
-TODO: add some specific tasks here
 
 
 Download the [mini-beast][3] (reccomended!)
