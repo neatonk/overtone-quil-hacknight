@@ -9,9 +9,10 @@ Repo for Chicago Clojure: [Overtone][over] + [Quil][quil] Hacknight
 Getting Started
 ===============
 
-1. Install [lein2][0]
+1. Install [lein2][0] and [git][git] (if you don't have them)
 2. Fork and clone this repo ([fork-a-repo][1])
 3. Run the examples (`lein run`)
+4. Kill the examples when you're ready to hack.
 4. Start a repl (`lein repl` or `M-x clojure-jack-in`)
 5. Hack!!!
 
@@ -21,7 +22,7 @@ The Examples
 Visualizer
 ----------
 
-Draws the colorful circles in response to Overtone's output using the
+Draws colorful circles in response to Overtone's output using the
 new `tap` feature. Make some sound and watch see what happens.
 
 
@@ -57,7 +58,6 @@ Stuff you can do
 Next Steps
 ==========
 
-
 Download the [mini-beast][3] (reccomended!)
 -------------------------------------------
 
@@ -78,6 +78,7 @@ This could take some time, but the work has already begun...
 *   Push your code to a new repo on github.
 *   Join the discussion [here][7] and share your work.
 
+[git]: http://git-scm.com/downloads
 [0]: https://github.com/technomancy/leiningen/#installation
 [1]: https://help.github.com/articles/fork-a-repo
 [2]: https://github.com/technomancy/leiningen/#basic-usage
