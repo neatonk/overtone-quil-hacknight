@@ -1,7 +1,10 @@
 overtone-quil-hacknight
 =======================
 
-Repo for Chicago Clojure: Overtone + Quil Hacknight
+Repo for Chicago Clojure: [Overtone][over] + [Quil][quil] Hacknight
+
+[over]: https://github.com/overtone/overtone
+[quil]: https://github.com/quil/quil
 
 Getting Started
 ===============
@@ -38,9 +41,9 @@ $ cd overtone-quil-hacknight
 $ lein run
 ``` 
 
-This will run the visualzer and controller examples at the same
-time. Jump in and start playing with the controller button to make the
-visualization react.
+This will run the visualzer and the controller examples at the same
+time in different windows. Jump in and start playing with the
+controller button to make the visualization react.
 
 Next Steps
 ==========
