@@ -35,9 +35,9 @@
            w (width)
            h (height)]
        (ctl @synth*
-            :note (nth notes (long x))
+            :note (nth notes (abs (long x)))
             :pos (- (/ x (* 0.5 w)) 1)
-            :wob-freq (nth wob (long x)))
+            :wob-freq (nth wob (abs (long x))))
        (reset! state* {:x x :y y :on? true})))
 
 (defn mouse-released
