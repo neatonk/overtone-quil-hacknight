@@ -16,16 +16,16 @@
        (reset! synth* (dub-bass))))
 
 (defn setup []
-  (smooth)          ;;Turn on anti-aliasing
-  (frame-rate 15)    ;;Set framerate to 5 FPS
-  (background 100)) ;;Set the background color
+  (smooth)         ;;Turn on anti-aliasing
+  (frame-rate 15)  ;;Set framerate to 5 FPS
+  (background 0))  ;;Set the background color
 
 (defn draw []
   (let [{:keys [x y on?]} @state*]
     (stroke 255)
     (stroke-weight 255)
-    (fill 255)
-    (background 100)
+    (fill 255 0 0 0.6)
+    (background 0)
     (when on?
       (ellipse x y 10 10))))
 

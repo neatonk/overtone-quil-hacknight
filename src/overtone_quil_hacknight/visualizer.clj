@@ -21,30 +21,29 @@
        (into {} (map (fn [[k v]] [k @v]) *taps*))))
 
 (defn- scale-in
-  "Scale a tap value by 'max'. Always positive."
+  "Scale a tap value by 'max'."
   [taps key max]
   (abs (* (get taps key 0) max)))
 
 (defn setup []
   (smooth)          ;;Turn on anti-aliasing
-  (frame-rate 5)    ;;Set framerate to 5 FPS
-  (background 100)) ;;Set the background color
+  (frame-rate 10)    ;;Set framerate to 5 FPS
+  (background 0)) ;;Set the background color
 
 (defn draw []
   (let [taps (get-taps)]
     (stroke (scale-in taps :phase 255))
     (stroke-weight (scale-in taps :phase 10))
-    (fill (scale-in taps :phase 255))
+    (fill (color (scale-in taps :left 255)
+                 (scale-in taps :right 255)
+                 (scale-in taps :phase 255)))
 
+    (background 0 0.01) ;; fade out
     (let [diam (+ (scale-in taps :left 100)
                   (scale-in taps :right 100)
                   10)
-          xc   (* 0.5 (width))
-          yc   (* 0.5 (height))
-          x    (+ (scale-in taps :left xc)
-                  xc)
-          y    (+ (scale-in taps :right yc)
-                  yc)]
+          x    (scale-in taps :left (width))
+          y    (scale-in taps :right (height))]
       (ellipse x y diam diam))))
 
 (defn- sketch-window
